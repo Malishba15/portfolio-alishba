@@ -17,14 +17,32 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- Splash Screen -->
+    <div id="splash-screen" class="splash-screen">
+      <h1 class="splash-title">
+        <span class="splash-char">A</span><span class="splash-char">L</span><span class="splash-char">I</span><span class="splash-char">S</span><span class="splash-char">H</span><span class="splash-char">B</span><span class="splash-char">A</span>
+        <span class="splash-char">&nbsp;</span>
+        <span class="splash-char">M</span><span class="splash-char">A</span><span class="splash-char">L</span><span class="splash-char">I</span><span class="splash-char">K</span>
+      </h1>
+      <div class="splash-loader-line"></div>
+    </div>
+
+    <!-- Animated Background Elements -->
     <div class="bg-orb orb-one"></div>
     <div class="bg-orb orb-two"></div>
+    <div class="bg-orb orb-three"></div>
     <div class="bg-grid"></div>
 
     <div id="header-root"></div>
     <main id="main-root"></main>
     <div id="footer-root"></div>
 
+    <!-- External Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+
+    <!-- Component Scripts -->
     <script src="scripts/sections/header.js"></script>
     <script src="scripts/sections/education.js"></script>
     <script src="scripts/sections/about.js"></script>
@@ -35,6 +53,8 @@
     <script src="scripts/sections/certifications.js"></script>
     <script src="scripts/sections/contact.js"></script>
     <script src="scripts/sections/footer.js"></script>
+    
+    <!-- App Logic -->
     <script src="scripts/app.js"></script>
   </body>
 </html>

@@ -48,7 +48,7 @@ window.portfolioSections.header = `
       </div>
     </div>
 
-    <div class="hero-card hero-photo-card">
+    <div class="hero-card hero-photo-card" data-tilt data-tilt-max="5" data-tilt-glare="true">
       <img src="Alishba.jfif" alt="Alishba Malik" class="profile-photo" />
       <div class="hero-card-text">
         <h3>Alishba Malik</h3>

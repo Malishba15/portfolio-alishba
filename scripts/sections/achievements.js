@@ -4,7 +4,7 @@ window.portfolioSections.achievements = `
 <section id="achievements" class="container section section-reveal">
   <h2>Achievements & Leadership</h2>
   <div class="card-list">
-    <article class="card-block">
+    <article class="card-block" data-tilt data-tilt-max="4">
       <h3>Leadership</h3>
       <ul>
         <li>IEEE KSB 2025-2026 Chairperson</li>
@@ -13,7 +13,7 @@ window.portfolioSections.achievements = `
       </ul>
     </article>
 
-    <article class="card-block">
+    <article class="card-block" data-tilt data-tilt-max="4">
       <h3>Awards</h3>
       <ul>
         <li>1st Position, EnsoFest Arduino Robot Competition (with FAST), 2023</li>

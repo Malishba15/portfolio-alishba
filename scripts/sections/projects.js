@@ -4,7 +4,7 @@ window.portfolioSections.projects = `
 <section id="projects" class="container section section-reveal">
   <h2>Projects</h2>
   <div class="projects-grid">
-    <article class="project-card">
+    <article class="project-card" data-tilt data-tilt-max="5" data-tilt-glare="true">
       <h3>NeedNest - Donation Mobile App</h3>
       <p>
         Built a Flutter-based donation app with secure user authentication and real-time tracking via
@@ -17,7 +17,7 @@ window.portfolioSections.projects = `
       </div>
     </article>
 
-    <article class="project-card">
+    <article class="project-card" data-tilt data-tilt-max="5" data-tilt-glare="true">
       <h3>TrainMate</h3>
       <p>
         Designed and implemented an AI-driven onboarding solution using Agentic AI and RAG for personalized,
@@ -36,7 +36,7 @@ window.portfolioSections.projects = `
       </div>
     </article>
 
-    <article class="project-card">
+    <article class="project-card" data-tilt data-tilt-max="5" data-tilt-glare="true">
       <h3>IEEE Kinnaird Student Branch Website</h3>
       <p>
         A dynamic and responsive website developed for the IEEE Kinnaird Student Branch using React.js.
@@ -54,7 +54,7 @@ window.portfolioSections.projects = `
       </div>
     </article>
 
-    <article class="project-card">
+    <article class="project-card" data-tilt data-tilt-max="5" data-tilt-glare="true">
       <h3>NeedNest - Donation App Wireframes</h3>
       <p>
         The NeedNest wireframes were designed using Figma as part of the UI/UX planning for a full-stack
@@ -69,7 +69,7 @@ window.portfolioSections.projects = `
       </div>
     </article>
 
-    <article class="project-card">
+    <article class="project-card" data-tilt data-tilt-max="5" data-tilt-glare="true">
       <h3>NeedNest - Donation Platform</h3>
       <p>
         A full-stack donation platform developed as a semester project using React.js. The website
@@ -87,7 +87,7 @@ window.portfolioSections.projects = `
       </div>
     </article>
 
-    <article class="project-card">
+    <article class="project-card" data-tilt data-tilt-max="5" data-tilt-glare="true">
       <h3>Eighty Eight Salon Website</h3>
       <p>
         A freelance project involving the design and development of a responsive website for Eighty Eight
@@ -105,7 +105,7 @@ window.portfolioSections.projects = `
       </div>
     </article>
 
-    <article class="project-card">
+    <article class="project-card" data-tilt data-tilt-max="5" data-tilt-glare="true">
       <h3>Food Recipe App</h3>
       <p>
         A feature-rich recipe application developed using React.js. The app integrates third-party APIs
@@ -122,7 +122,7 @@ window.portfolioSections.projects = `
       </div>
     </article>
 
-    <article class="project-card">
+    <article class="project-card" data-tilt data-tilt-max="5" data-tilt-glare="true">
       <h3>Personal Finance Tracker</h3>
       <p>
         A personal finance management web app designed to track income, expenses, and savings goals.
@@ -139,7 +139,7 @@ window.portfolioSections.projects = `
       </div>
     </article>
 
-    <article class="project-card">
+    <article class="project-card" data-tilt data-tilt-max="5" data-tilt-glare="true">
       <h3>To-Do App</h3>
       <p>
         A task management application developed using React.js to help users organize daily activities.
