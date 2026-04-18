@@ -94,45 +94,33 @@
     // Lock scroll during splash
     document.body.style.overflow = "hidden";
 
-    // Splash to Hero Master Timeline
+    // Splash to Hero Master Timeline (Elegant Pieterkoopt Style)
     const masterTl = gsap.timeline({
       onComplete: () => {
         document.body.style.overflow = "";
       }
     });
 
-    masterTl.to(".splash-char", {
-      y: 0,
-      opacity: 1,
-      duration: 0.6,
-      stagger: 0.04,
-      ease: "back.out(1.5)"
-    })
-    .to(".splash-loader-line", {
-      width: "100%",
-      duration: 1.0,
-      ease: "power2.inOut"
-    }, "-=0.2")
-    .to(".splash-char", {
-      y: -50,
+    // Elegant handwriting reveal (clip path wipe)
+    masterTl.fromTo(".signature-wrapper", 
+      { clipPath: "polygon(0 0, 0 0, 0 100%, 0 100%)" },
+      { clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)", duration: 2.2, ease: "power2.inOut" }
+    )
+    .to(".signature-wrapper", {
       opacity: 0,
-      duration: 0.4,
-      stagger: 0.02,
-      ease: "power2.in"
-    }, "+=0.2") 
-    .to(".splash-loader-line", {
-      opacity: 0,
-      duration: 0.2
-    }, "-=0.2")
+      y: -20,
+      duration: 0.8,
+      ease: "power3.in"
+    }, "+=0.4")
     .to(".splash-screen", {
       yPercent: -100,
-      duration: 0.8,
-      ease: "power3.inOut"
+      duration: 1.2,
+      ease: "power4.inOut"
     }, "+=0.1")
     .set(".splash-screen", { display: "none" }) // Forcefully hide splash screen after animation
-    .fromTo(".navbar", { y: -50, opacity: 0 }, { y: 0, opacity: 1, duration: 0.8, ease: "power3.out", clearProps: "all" }, "-=0.4")
-    .fromTo(".hero-copy > *", { y: 30, opacity: 0 }, { y: 0, opacity: 1, duration: 0.8, stagger: 0.1, ease: "power3.out", clearProps: "all" }, "-=0.6")
-    .fromTo(".hero-photo-card", { x: 50, opacity: 0 }, { x: 0, opacity: 1, duration: 1, ease: "power3.out", clearProps: "all" }, "-=0.6");
+    .fromTo(".navbar", { y: -20, opacity: 0 }, { y: 0, opacity: 1, duration: 1.5, ease: "power4.out", clearProps: "all" }, "-=0.4")
+    .fromTo(".hero-copy > *", { y: 40, opacity: 0 }, { y: 0, opacity: 1, duration: 1.5, stagger: 0.15, ease: "power4.out", clearProps: "all" }, "-=1.0")
+    .fromTo(".hero-photo-card", { y: 40, opacity: 0, filter: "blur(10px)" }, { y: 0, opacity: 1, filter: "blur(0px)", duration: 2, ease: "power4.out", clearProps: "all" }, "-=1.2");
 
     // Unified Section Reveal
     gsap.utils.toArray('.section').forEach(section => {
@@ -142,14 +130,14 @@
         gsap.from(header, {
           scrollTrigger: {
             trigger: section,
-            start: "top 80%",
+            start: "top 85%",
             toggleActions: "play none none reverse"
           },
-          y: 30,
+          y: 40,
           opacity: 0,
-          duration: 0.8,
-          stagger: 0.1,
-          ease: "power2.out"
+          duration: 1.5,
+          stagger: 0.2,
+          ease: "power4.out"
         });
       }
 
@@ -159,14 +147,14 @@
         gsap.from(cards, {
           scrollTrigger: {
             trigger: section,
-            start: "top 75%",
+            start: "top 80%",
             toggleActions: "play none none reverse"
           },
-          y: 40,
+          y: 60,
           opacity: 0,
-          duration: 0.8,
+          duration: 1.5,
           stagger: 0.15,
-          ease: "power3.out"
+          ease: "power4.out"
         });
       }
       
@@ -194,12 +182,25 @@
     gsap.from(".contact-layout > *", {
       scrollTrigger: {
         trigger: "#contact",
-        start: "top 80%",
+        start: "top 85%",
       },
-      y: 30,
+      y: 50,
       opacity: 0,
-      duration: 0.8,
-      stagger: 0.2
+      duration: 1.5,
+      stagger: 0.2,
+      ease: "power4.out"
+    });
+
+    // Stitch-style Premium Mouse Glow interaction
+    const glowCards = document.querySelectorAll('.card-block, .skill-panel, .project-card, .cert-item');
+    glowCards.forEach(card => {
+      card.addEventListener("mousemove", e => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        card.style.setProperty("--mouse-x", `${x}px`);
+        card.style.setProperty("--mouse-y", `${y}px`);
+      });
     });
   }
 })();
