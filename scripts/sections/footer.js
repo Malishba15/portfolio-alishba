@@ -22,10 +22,10 @@ window.portfolioSections.footer = `
       </a>
 
       <a
-        href="tel:+923374253475"
+        href="tel:+923274253475"
         class="footer-icon-link"
         aria-label="Phone"
-        data-tooltip="+92 337 4253475"
+        data-tooltip="+92 327 4253475"
       >
         <svg viewBox="0 0 24 24" aria-hidden="true">
           <path

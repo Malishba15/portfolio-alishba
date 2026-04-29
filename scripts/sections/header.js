@@ -60,7 +60,7 @@ window.portfolioSections.header = `
           </div>
           <div>
             <span>Phone</span>
-            <strong>+92 337 4253475</strong>
+            <strong>+92 327 4253475</strong>
           </div>
         </div>
       </div>
