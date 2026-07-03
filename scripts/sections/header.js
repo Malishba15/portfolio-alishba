@@ -24,18 +24,16 @@ window.portfolioSections.header = `
     <div class="hero-copy">
       <p class="eyebrow">Hi, I'm Alishba Malik</p>
       <h1 class="hero-title-main">
-        <span>FULL STACK</span>
-        <span class="hero-highlight">DEVELOPER</span>
+        <span>SOFTWARE</span>
+        <span class="hero-highlight">ENGINEER</span>
       </h1>
       <p class="hero-summary">
-        Final-year Computer Science student focused on building scalable, user-centered digital products.
-        I combine strong front-end execution, practical back-end problem-solving, and modern AI-assisted workflows
-        to deliver reliable and impactful software solutions.
+        I build intelligent, production-ready web and mobile applications from AI-powered SaaS platforms to cross-platform mobile apps. Currently finishing my CS degree at Kinnaird College with hands-on experience in React.js, Node.js, Flutter, and Agentic AI.
       </p>
       <div class="hero-tags">
-        <span>Full Stack Developer</span>
+        <span>Full-Stack Developer & AI Application Builder</span>
         <span>Lahore, Pakistan</span>
-        <span>CGPA 3.52/4.0</span>
+        <span>CGPA 3.54/4.0</span>
         <span id="hero-typing">React.js</span>
       </div>
       <div class="hero-cta">
@@ -52,7 +50,7 @@ window.portfolioSections.header = `
       <img src="Alishba.jfif" alt="Alishba Malik" class="profile-photo" />
       <div class="hero-card-text">
         <h3>Alishba Malik</h3>
-        <p>8th Semester CS Student | Full Stack Developer</p>
+        <p>Full-Stack Developer & AI Application Builder</p>
         <div class="meta-grid">
           <div>
             <span>Email</span>

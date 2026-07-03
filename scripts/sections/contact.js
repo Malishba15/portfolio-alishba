@@ -6,8 +6,8 @@ window.portfolioSections.contact = `
     <div class="contact-copy">
       <h2>Get In Touch</h2>
       <p>
-        Send me a message for internships, collaborations, or software development opportunities. I usually
-        reply within 24-48 hours.
+        I'm open to full-time roles and collaborative projects in full-stack development or AI engineering. 
+        I usually reply within 24-48 hours.
       </p>
     </div>
 

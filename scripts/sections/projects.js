@@ -5,24 +5,34 @@ window.portfolioSections.projects = `
   <h2>Projects</h2>
   <div class="projects-grid">
     <article class="project-card" data-tilt data-tilt-max="5" data-tilt-glare="true">
-      <h3>NeedNest - Donation Mobile App</h3>
-      <p>
-        Built a Flutter-based donation app with secure user authentication and real-time tracking via
-        Firebase. Enabled item and monetary donations through an intuitive mobile interface.
-      </p>
-      <div class="chip-row">
-        <span>Flutter</span>
-        <span>Dart</span>
-        <span>Firebase</span>
-      </div>
+       <h3>NeedNest</h3>
+
+  <p>
+    A cross-platform mobile app connecting donors with people in need, built end-to-end with Flutter and Firebase.
+  </p>
+
+  <ul>
+    <li>Secure user registration and login via Firebase Authentication</li>
+    <li>Dual donation flows — item donations and monetary contributions</li>
+    <li>Intuitive UI/UX designed to minimize friction and maximize conversion</li>
+  </ul>
+
+  <div class="chip-row">
+    <span>Flutter</span>
+    <span>Dart</span>
+    <span>Firebase</span>
+  </div>
     </article>
 
     <article class="project-card" data-tilt data-tilt-max="5" data-tilt-glare="true">
       <h3>TrainMate</h3>
       <p>
-        Designed and implemented an AI-driven onboarding solution using Agentic AI and RAG for personalized,
-        company-specific training. Included automated guidance and progress tracking in a scalable
-        multi-tenant SaaS architecture.
+        Most companies waste weeks onboarding new hires through manual processes and overloaded mentors. TrainMate fixes that.
+        I built a multi-tenant SaaS platform that uses Agentic AI and Retrieval-Augmented Generation (RAG) to deliver personalized, company-specific training through an intelligent chatbot no mentor required.
+        <ul>
+          <li>Optimized data retrieval pipelines for faster, more accurate responses</li>
+          <li>Multi-tenant architecture supporting multiple companies from a single deployment</li>
+          <li>Optimized data retrieval pipelines for faster, more accurate responses</li>
       </p>
       <div class="chip-row">
         <span>React.js</span>
@@ -38,11 +48,15 @@ window.portfolioSections.projects = `
 
     <article class="project-card" data-tilt data-tilt-max="5" data-tilt-glare="true">
       <h3>IEEE Kinnaird Student Branch Website</h3>
-      <p>
-        A dynamic and responsive website developed for the IEEE Kinnaird Student Branch using React.js.
-        Designed to showcase events, updates, and student activities, the platform includes interactive
-        components, smooth navigation, and optimized performance.
-      </p>
+  <p>
+    Designed and developed the official website for the IEEE Kinnaird Student Branch,
+    serving students across Lahore.
+  </p>
+  <ul>
+    <li>Fully responsive React.js web application optimized for all screen sizes and browsers</li>
+    <li>Reusable component architecture ensuring scalable and consistent UI across all pages</li>
+    <li>Streamlined navigation system improving content discoverability and user experience</li>
+  </ul>
       <div class="chip-row">
         <span>React.js</span>
         <span>JavaScript</span>

@@ -257,6 +257,31 @@ a {
   overflow: hidden;
 }
 
+.project-card ul {
+  margin-top: 0.6rem;
+  margin-bottom: 1rem;
+  padding-left: 1.2rem;
+  list-style: none;
+}
+
+.project-card ul li {
+  position: relative;
+  padding-left: 1.2rem;
+  margin-bottom: 0.8rem;
+  color: var(--text-soft);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Custom elegant bullet */
+.project-card ul li::before {
+  content: "▹";
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-size: 1rem;
+}
+
 .eyebrow {
   display: inline-block;
   color: var(--accent);
@@ -411,7 +436,7 @@ a {
 
 /* Section Globals */
 .section {
-  padding: 8rem 0;
+  padding: 5rem 0;
   border-top: 1px solid var(--border);
 }
 
@@ -456,7 +481,7 @@ a {
   position: relative;
   overflow: hidden;
   transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
-  padding: 3rem;
+  padding: 1.8rem;
 }
 
 .card-block:hover,
@@ -618,7 +643,8 @@ a {
 
 .project-card p {
   color: var(--text-soft);
-  margin: 1.5rem 0;
+  margin-top: 0.6rem;
+  margin-bottom: 1rem;
   font-size: 1rem;
   line-height: 1.6;
   font-weight: 300;

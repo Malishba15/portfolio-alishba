@@ -5,7 +5,7 @@ window.portfolioSections.footer = `
   <div class="container footer-content">
     <div>
       <p class="footer-name">Alishba Malik</p>
-      <p>CS Senior | Software Developer</p>
+      <p>Full-Stack & AI Developer</p>
     </div>
 
     <div class="footer-contact-list" aria-label="Contact Links">
