@@ -327,6 +327,8 @@ export default function App() {
   },
 ];
 
+  const contactRecipient = 'malishba909@gmail.com';
+
   // Contact form submission
   const handleFormSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -335,10 +337,11 @@ export default function App() {
 
     const mailSubject = encodeURIComponent(`Portfolio inquiry from ${formName}`);
     const mailBody = encodeURIComponent(`Name: ${formName}\nEmail: ${formEmail}\n\n${formMessage}`);
-    const mailtoLink = `mailto:malishba909@gmail.com?subject=${mailSubject}&body=${mailBody}`;
+    const mailtoLink = `mailto:${contactRecipient}?subject=${mailSubject}&body=${mailBody}`;
 
     const payload = new URLSearchParams({
       'form-name': 'contact',
+      recipient: contactRecipient,
       name: formName,
       email: formEmail,
       message: formMessage,
@@ -1221,6 +1224,7 @@ export default function App() {
                         exit={{ opacity: 0 }}
                       >
                         <input type="hidden" name="form-name" value="contact" />
+                        <input type="hidden" name="recipient" value={contactRecipient} />
                         <input type="hidden" name="bot-field" />
                         <div className="space-y-2">
                           <label className="block text-[10px] font-label-style font-bold uppercase tracking-widest text-[#E0D6B8]">
