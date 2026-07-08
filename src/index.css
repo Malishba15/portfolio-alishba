@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #171303;
+  --color-surface: #171303;
+  --color-surface-dim: #171303;
+  --color-surface-bright: #3f3924;
+  --color-surface-container-lowest: #120e01;
+  --color-surface-container-low: #201b09;
+  --color-surface-container: #241f0c;
+  --color-surface-container-high: #2f2a16;
+  --color-surface-container-highest: #3a3520;
+  
+  --color-primary: #800000;
+  --color-secondary: #633A2C;
+  --color-tertiary: #E0D6B8;
+  --color-on-surface: #E0D6B8;
+  --color-on-surface-variant: #C0B8A0;
+  --color-accent: #B8842C;
+  
+  --font-headline: Montserrat, sans-serif;
+  --font-body: "Hanken Grotesk", sans-serif;
+  --font-label: "Space Grotesk", sans-serif;
+  
+  --animate-marquee: marquee 40s linear infinite;
+  --animate-marquee-reverse: marquee-reverse 40s linear infinite;
+  --animate-glow: glow 8s ease infinite;
+
+  @keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-50% - 12px)); }
+  }
+  @keyframes marquee-reverse {
+    0% { transform: translateX(calc(-50% - 12px)); }
+    100% { transform: translateX(0); }
+  }
+  @keyframes glow {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
+}
+
+/* Custom Utilities */
+.hero-gradient-text {
+  background: linear-gradient(180deg, #E0D6B8 0%, #800000 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contact-btn-gradient {
+  background: linear-gradient(135deg, #800000, #633A2C, #410000);
+  background-size: 200% 200%;
+}
+
+.glass-card {
+  background: rgba(36, 31, 12, 0.65);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(224, 214, 184, 0.08);
+}
+
+.bg-burgundy-glow {
+  background: radial-gradient(circle at center, rgba(128, 0, 0, 0.12) 0%, transparent 70%);
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Base resets */
+body {
+  font-family: var(--font-body);
+  background-color: #171303;
+  color: #E0D6B8;
+}
+
+h1, h2, h3, h4, .font-heading {
+  font-family: var(--font-headline);
+}
+
+.font-label-style {
+  font-family: var(--font-label);
+}
